@@ -1,0 +1,9 @@
+### Add a new patient
+POST http://localhost:8080/api/patients?wardName=General
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "age": 34,
+  "diagnosis": "Flu"
+}
