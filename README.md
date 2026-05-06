@@ -1,29 +1,43 @@
-# Hospital Management System
+# 🏥 Hospital Management System (Java Swing)
 
+## 📌 Description
 A Java Swing application designed to simulate hospital workflows inspired by NHS systems.  
 This was my first major project and helped me learn object-oriented programming, UI design, and file persistence.
 
 ---
 
-## 📌 Features
-
-- Register & manage patients  
-- Assign doctors  
+## 🚀 Features
+- Register and manage patients  
+- Assign doctors to patients  
 - File-based data storage  
-- Simple and clean UI built using Swing  
-- Modular class design following OOP principles  
+- Simple and clean user interface using Swing  
+- Modular design following OOP principles  
 
 ---
 
 ## 🛠️ Tech Stack
-
-- **Java**
-- **Swing**
-- **OOP Architecture**
-- **File Persistence (CSV / TXT)**
+- Java  
+- Swing (GUI)  
+- Object-Oriented Programming  
+- File Persistence (CSV / TXT)  
 
 ---
 
+## 📸 Screenshots
+
+### 🏥 Main Application View
+*(Add screenshot here)*
+
+### 🏥 Patient Management Screen
+*(Add second screenshot here)*
+
+---
+
+## ▶️ Running the Project
+
+### Compile:
+```bash
+javac *.java
 ## 🖼️ Screenshots
 
 ### 🏥 Hospital Working Screenshot
@@ -35,6 +49,7 @@ This was my first major project and helped me learn object-oriented programming,
 ---
 
 ## 🚀 Running the Project
+java Main
 
 1. Compile the project:
 ```bash
