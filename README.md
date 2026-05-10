@@ -22,7 +22,18 @@ This was my first major project and helped me develop skills in object-oriented 
 - Java  
 - Swing (GUI)  
 - Object-Oriented Programming  
-- File Persistence (CSV / TXT)  
+- File Persistence (CSV / TXT)
+
+- ## API Screenshots
+
+### Create Doctor Endpoint
+![Create Doctor API](screenshots/create-doctor-api.png)
+
+### Get Doctors Endpoint
+![Get Doctors API](screenshots/get-doctors-api.png)
+
+### Doctor Login Endpoint
+![Doctor Login API](screenshots/doctor-login-api.png)
 
 ---
 
