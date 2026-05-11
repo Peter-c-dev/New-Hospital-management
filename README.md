@@ -9,19 +9,19 @@ This was my first major project and helped me develop skills in object-oriented 
 
 ## 🚀 Features
 
-- Register and manage patients  
-- Assign doctors to patients  
-- File-based data storage  
-- Simple and clean user interface using Swing  
-- Modular design following OOP principles  
+- Register and manage patients
+- Assign doctors to patients
+- File-based data storage
+- Simple and clean user interface using Swing
+- Modular design following OOP principles
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Java  
-- Swing (GUI)  
-- Object-Oriented Programming  
+- Java
+- Swing (GUI)
+- Object-Oriented Programming
 - File Persistence (CSV / TXT)
 
 ---
