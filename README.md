@@ -24,7 +24,7 @@ This was my first major project and helped me develop skills in object-oriented 
 - Object-Oriented Programming  
 - File Persistence (CSV / TXT)
 
-- ## API Screenshots
+## API Screenshots
 
 ### Create Doctor Endpoint
 ![Create Doctor API](screenshots/create-doctor-api.png)
