@@ -44,3 +44,9 @@ This was my first major project and helped me develop skills in object-oriented 
 ### Compile:
 ```bash
 javac *.java
+```
+
+### Run:
+```bash
+java Main
+```
