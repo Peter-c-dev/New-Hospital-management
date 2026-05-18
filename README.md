@@ -1,5 +1,3 @@
-Now your README should be something like this:
-
 Hospital Management System
 📌 Description
 
