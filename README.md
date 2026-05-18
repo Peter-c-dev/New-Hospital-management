@@ -1,52 +1,73 @@
-# 🏥 Hospital Management System (Java Swing)
+Now your README should be something like this:
 
-## 📌 Description
-A Java Swing application designed to simulate hospital workflows inspired by NHS systems.
+Hospital Management System
+📌 Description
 
-This was my first major project and helped me develop skills in object-oriented programming, UI design, and file-based data persistence.
+A Hospital Management System backend built with Spring Boot that simulates NHS-style hospital workflows.
 
----
+This project demonstrates backend software engineering concepts including RESTful APIs, layered architecture, authentication, database relationships, and Spring Security integration.
 
-## 🚀 Features
+The system supports patient admission, doctor assignment, ward management, and appointment handling.
 
-- Register and manage patients
-- Assign doctors to patients
-- File-based data storage
-- Simple and clean user interface using Swing
-- Modular design following OOP principles
+🚀 Features
+Patient admission system
+Doctor management
+Ward assignment
+Appointment management
+RESTful APIs
+Spring Security authentication
+H2 in-memory database
+DTO architecture
+Exception handling
+Layered backend structure
+🛠️ Tech Stack
+Java 17
+Spring Boot
+Spring Security
+Spring Data JPA
+Hibernate
+H2 Database
+Maven
+Postman
+📂 Project Structure
+Controllers
+Services
+Repositories
+DTOs
+Models
+Security Configuration
+Exception Handling
+📸 Screenshots
+Get Patients API
 
----
+Patient Admission API
 
-## 🛠️ Tech Stack
+H2 Database
 
-- Java
-- Swing (GUI)
-- Object-Oriented Programming
-- File Persistence (CSV / TXT)
+Project Structure
 
----
+▶️ Running the Project
+Clone Repository
+git clone <your-repository-url>
+Run Application
+mvn spring-boot:run
 
-## 📸 API Screenshots
+Application runs on:
 
-### Create Doctor Endpoint
-![Create Doctor API](screenshots/create-doctor-api.png)
+http://localhost:8080
+🔐 Authentication
 
-### Get Doctors Endpoint
-![Get Doctors API](screenshots/get-doctors-api.png)
+Spring Security Basic Authentication is enabled.
 
-### Doctor Login Endpoint
-![Doctor Login API](screenshots/doctor-login-api.png)
+Development credentials are generated at application startup and displayed in the console logs.
 
----
-
-## ▶️ Running the Project
-
-### Compile:
-```bash
-javac *.java
-```
-
-### Run:
-```bash
-java Main
-```
+📡 Example API Endpoints
+Patients
+Get All Patients
+GET /api/patients
+Admit Patient
+POST /api/patients/admit/{wardName}/{username}
+Update Patient Status
+PATCH /api/patients/{id}/status
+Discharge Patient
+DELETE /api/patients/{id}
