@@ -54,19 +54,25 @@ The system supports patient admission, doctor assignment, ward management, and a
 
 ### Get Patients API
 
-![Get Patients API](get-patients-api.png)
+![Get Patients API](./get-patients-api.png)
 
 ---
 
 ### Patient Admission API
 
-![Patient Admission API](post-patient-admission-api.png)
+![Patient Admission API](./post-patient-admission-api.png)
 
 ---
 
 ### H2 Database
 
-![H2 Database](h2-database-patients.png)
+![H2 Database](./h2-database-patients.png)
+
+---
+
+### Project Structure
+
+![Project Structure](./hospital-project-structure.png)
 
 ---
 
