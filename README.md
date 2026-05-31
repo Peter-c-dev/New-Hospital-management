@@ -12,69 +12,58 @@ The system supports patient admission, doctor assignment, ward management, and a
 
 ## 🚀 Features
 
-- Patient admission system
-- Doctor management
-- Ward assignment
-- Appointment management
-- RESTful APIs
-- Spring Security authentication
-- H2 in-memory database
-- DTO architecture
-- Exception handling
-- Layered backend structure
+* Patient admission system
+* Doctor management
+* Ward assignment
+* Appointment management
+* RESTful APIs
+* Spring Security authentication
+* H2 in-memory database
+* DTO architecture
+* Exception handling
+* Layered backend structure
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Java 17
-- Spring Boot
-- Spring Security
-- Spring Data JPA
-- Hibernate
-- H2 Database
-- Maven
-- Postman
+* Java 17
+* Spring Boot
+* Spring Security
+* Spring Data JPA
+* Hibernate
+* H2 Database
+* Maven
+* Postman
+* Swagger/OpenAPI
 
 ---
 
 ## 📂 Project Structure
 
-- Controllers
-- Services
-- Repositories
-- DTOs
-- Models
-- Security Configuration
-- Exception Handling
+* Controllers
+* Services
+* Repositories
+* DTOs
+* Models
+* Security Configuration
+* Exception Handling
 
 ---
 
 ## 📸 Screenshots
 
+### Swagger Homepage
+
+![Swagger Homepage](swagger-homepage.png)
+
 ### Get Patients API
 
-![Get Patients API](./get-patients-api.png)
-
----
-
-### Patient Admission API
-
-![Patient Admission API](./post-patient-admission-api.png)
-
----
+![Get Patients API](swagger-get-patients.png)
 
 ### H2 Database
 
-![H2 Database](./h2-database-patients.png)
-
----
-
-### Project Structure
-
-![Project Structure](./hospital-project-structure.png)
-
----
+![H2 Database](h2-database-wards.png)
 
 ### Project Structure
 
@@ -87,8 +76,10 @@ The system supports patient admission, doctor assignment, ward management, and a
 ### Clone Repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
 ```
+
+⬅ CHANGE THIS to your actual GitHub repository URL.
 
 ### Run Application
 
@@ -106,7 +97,7 @@ http://localhost:8080
 
 ## 🔐 Authentication
 
-Spring Security Basic Authentication is enabled.
+Spring Security authentication is enabled.
 
 Development credentials are generated at application startup and displayed in the console logs.
 
@@ -144,9 +135,10 @@ DELETE /api/patients/{id}
 
 ## 📈 Future Improvements
 
-- JWT Authentication
-- PostgreSQL integration
-- Docker deployment
-- React frontend
-- Swagger/OpenAPI documentation
-- Role-based authorization
+* JWT Authentication
+* PostgreSQL integration
+* Docker deployment
+* React frontend
+* Automated testing
+* Role-based authorization
+* CI/CD pipeline with GitHub Actions
