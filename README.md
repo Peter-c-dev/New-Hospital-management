@@ -51,44 +51,35 @@ The system supports patient admission, doctor assignment, ward management, and a
 
 ---
 
-## 📸 Screenshots
+📸 Screenshots
+Swagger Homepage
 
-### Swagger Homepage
 
-![Swagger Homepage](swagger-homepage.png)
 
-### Get Patients API
 
-![Get Patients API](swagger-get-patients.png)
+Get Patients API
 
-### H2 Database
 
-![H2 Database](h2-database-wards.png)
 
-### Project Structure
 
-![Project Structure](hospital-project-structure.png)
+H2 Database
 
----
 
-## ▶️ Running the Project
 
-### Clone Repository
 
-```bash
-``` git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+Project Structure
 
-⬅ CHANGE THIS to your actual GitHub repository URL.
 
-### Run Application
 
-```bash
+
+▶️ Running the Project
+Clone Repository
+git clone https://github.com/Peter-c-dev/New-Hospital-management.git
+Run Application
 mvn spring-boot:run
-```
 
 Application runs on:
 
-```text
 http://localhost:8080
 ```
 
