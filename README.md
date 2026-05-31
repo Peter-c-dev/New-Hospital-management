@@ -76,8 +76,7 @@ The system supports patient admission, doctor assignment, ward management, and a
 ### Clone Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
-```
+``` git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
 
 ⬅ CHANGE THIS to your actual GitHub repository URL.
 
