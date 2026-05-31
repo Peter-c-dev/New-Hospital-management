@@ -51,6 +51,32 @@ The system supports patient admission, doctor assignment, ward management, and a
 
 ---
 
+---
+
+## 🏗️ Architecture
+
+The application follows a layered architecture:
+
+### Controller Layer
+Handles HTTP requests and responses through REST endpoints.
+
+### Service Layer
+Contains business logic for patients, doctors, wards, and appointments.
+
+### Repository Layer
+Uses Spring Data JPA repositories to interact with the database.
+
+### Model Layer
+Defines entities and relationships used throughout the application.
+
+### DTO Layer
+Separates API request and response models from internal entities.
+
+### Security Layer
+Provides Spring Security configuration and authentication support.
+
+---
+
 ## 📸 Screenshots
 
 ### Swagger Homepage
