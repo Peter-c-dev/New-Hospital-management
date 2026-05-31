@@ -51,35 +51,43 @@ The system supports patient admission, doctor assignment, ward management, and a
 
 ---
 
-📸 Screenshots
-Swagger Homepage
+## 📸 Screenshots
 
+### Swagger Homepage
 
+![Swagger Homepage](swagger-homepage.png)
 
+### Get Patients API
 
-Get Patients API
+![Get Patients API](swagger-get-patients.png)
 
+### H2 Database
 
+![H2 Database](h2-database-wards.png)
 
+### Project Structure
 
-H2 Database
+![Project Structure](hospital-project-structure.png)
 
+---
 
+## ▶️ Running the Project
 
+### Clone Repository
 
-Project Structure
-
-
-
-
-▶️ Running the Project
-Clone Repository
+```bash
 git clone https://github.com/Peter-c-dev/New-Hospital-management.git
-Run Application
+```
+
+### Run Application
+
+```bash
 mvn spring-boot:run
+```
 
 Application runs on:
 
+```text
 http://localhost:8080
 ```
 
@@ -130,5 +138,8 @@ DELETE /api/patients/{id}
 * Docker deployment
 * React frontend
 * Automated testing
+* Role-based authorization
+* CI/CD pipeline with GitHub Actions
+
 * Role-based authorization
 * CI/CD pipeline with GitHub Actions
