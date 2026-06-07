@@ -1,6 +1,5 @@
-# Hospital Management System
-
-## 📌 Description
+🏥 Hospital Management System
+📌 Description
 
 A Hospital Management System backend built with Spring Boot that simulates NHS-style hospital workflows.
 
@@ -8,38 +7,43 @@ This project demonstrates backend software engineering concepts including RESTfu
 
 The system supports patient admission, doctor assignment, ward management, patient transfers, and appointment handling.
 
-## 🚀 Features
-
-- Patient admission system
-- Patient transfer between wards
-- Patient status tracking (ADMITTED / DISCHARGED)
-- Doctor management
-- Doctor assignment during patient admission
-- Ward assignment and management
-- Appointment management
-- User registration
-- User login with JWT authentication
-- RESTful APIs
-- Spring Security authentication
-- H2 in-memory database
-- DTO architecture
-- Exception handling
-- Layered backend structure
-
-## 🛠️ Tech Stack
-
-- Java 17
-- Spring Boot
-- Spring Security
-- Spring Data JPA
-- Hibernate
-- H2 Database
-- Maven
-- Swagger / OpenAPI
-- Postman
+🚀 Features
+Patient admission system
+Patient transfer between wards
+Patient status tracking (ADMITTED / DISCHARGED)
+Doctor management
+Doctor assignment during patient admission
+Ward assignment and management
+Appointment management
+User registration
+User login with JWT authentication
+RESTful API architecture
+Spring Security authentication
+H2 in-memory database
+DTO architecture
+Exception handling
+Layered backend structure
+🛠️ Tech Stack
+Java 17
+Spring Boot
+Spring Security
+Spring Data JPA
+Hibernate
+H2 Database
+Maven
+Swagger / OpenAPI
+Postman
+📂 Project Structure
+Controllers
+Services
+Repositories
+DTOs
+Models
+Security Configuration
+Exception Handling
 🏗️ Architecture
 
-The application follows a layered architecture:
+The application follows a layered architecture.
 
 Controller Layer
 
@@ -47,7 +51,7 @@ Handles HTTP requests and responses through REST endpoints.
 
 Service Layer
 
-Contains business logic for patients, doctors, wards, and appointments.
+Contains business logic for patients, doctors, wards, users, and appointments.
 
 Repository Layer
 
@@ -96,17 +100,21 @@ Provides Spring Security configuration and JWT authentication support.
 
 ▶️ Running the Project
 Clone Repository
-
 git clone https://github.com/Peter-c-dev/New-Hospital-management.git
-
 Run Application
+./gradlew bootRun
 
-mvn spring-boot
+Or:
 
-Application runs on:
+gradlew.bat bootRun
+
+The application runs on:
 
 http://localhost:8080
 
+Swagger UI:
+
+http://localhost:8080/swagger-ui.html
 🔐 Authentication
 
 Spring Security authentication is enabled.
@@ -120,24 +128,22 @@ JWT tokens are generated during login and can be used to access secured endpoint
 Passwords are encrypted using BCrypt before being stored in the database.
 
 📡 Example API Endpoints
-Patients
-
+Register User
+POST /api/users/register
+Login User
+POST /api/users/login
+Create Ward
+POST /api/wards
 Get All Patients
-
 GET /api/patients
-
 Admit Patient
-
 POST /api/patients/admit/{wardName}/{username}
-
+Transfer Patient
+PATCH /api/patients/{id}/transfer
 Update Patient Status
-
 PATCH /api/patients/{id}/status
-
 Discharge Patient
-
 DELETE /api/patients/{id}
-
 📈 Future Improvements
 PostgreSQL integration
 Docker deployment
@@ -145,3 +151,10 @@ React frontend
 Automated testing
 Role-based authorization
 CI/CD pipeline with GitHub Actions
+Cloud deployment (AWS/Azure)
+Unit and integration testing
+👨‍💻 Author
+
+Peter Cross
+
+Built as part of my software engineering portfolio while transitioning into backend Java development using Spring Boot and modern API design principles.
