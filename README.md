@@ -1,16 +1,13 @@
-# Hospital Management System
-
-## 📌 Description
+Hospital Management System
+📌 Description
 
 A Hospital Management System backend built with Spring Boot that simulates NHS-style hospital workflows.
 
-This project demonstrates backend software engineering concepts including RESTful APIs, layered architecture, authentication, database relationships, and Spring Security integration.
+This project demonstrates backend software engineering concepts including RESTful APIs, layered architecture, JWT authentication, database relationships, and Spring Security integration.
 
-The system supports patient admission, doctor assignment, ward management, and appointment handling.
+The system supports patient admission, doctor assignment, ward management, patient transfers, and appointment handling.
 
----
 🚀 Features
-
 Patient admission system
 Patient transfer between wards
 Patient status tracking (ADMITTED / DISCHARGED)
@@ -25,105 +22,86 @@ Spring Security authentication
 H2 in-memory database
 DTO architecture
 Exception handling
-Layered backend structure****
-
----
-
-## 🛠️ Tech Stack
-
-* Java 17
-* Spring Boot
-* Spring Security
-* Spring Data JPA
-* Hibernate
-* H2 Database
-* Maven
-* Postman
-* Swagger/OpenAPI
-
----
-
-## 📂 Project Structure
-
-* Controllers
-* Services
-* Repositories
-* DTOs
-* Models
-* Security Configuration
-* Exception Handling
-
----
-
----
-
-## 🏗️ Architecture
+Layered backend structure
+🛠️ Tech Stack
+Java 17
+Spring Boot
+Spring Security
+Spring Data JPA
+Hibernate
+H2 Database
+Maven
+Swagger / OpenAPI
+Postman
+📂 Project Structure
+Controllers
+Services
+Repositories
+DTOs
+Models
+Security Configuration
+Exception Handling
+🏗️ Architecture
 
 The application follows a layered architecture:
 
-### Controller Layer
+Controller Layer
+
 Handles HTTP requests and responses through REST endpoints.
 
-### Service Layer
+Service Layer
+
 Contains business logic for patients, doctors, wards, and appointments.
 
-### Repository Layer
+Repository Layer
+
 Uses Spring Data JPA repositories to interact with the database.
 
-### Model Layer
+Model Layer
+
 Defines entities and relationships used throughout the application.
 
-### DTO Layer
+DTO Layer
+
 Separates API request and response models from internal entities.
 
-### Security Layer
-Provides Spring Security configuration and authentication support.
+Security Layer
 
----
+Provides Spring Security configuration and JWT authentication support.
 
-## 📸 Screenshots
+📸 Screenshots
+![User Registration](01-User-Registration.png)
 
-### Swagger Homepage
+![Get All Users](02-Get-All-Users.png)
 
-![Swagger Homepage](swagger-homepage.png)
+![User Login JWT](03-User-Login-JWT.png)
 
-### Get Patients API
+![Create Ward](04-Create-Ward.png)
 
-![Get Patients API](swagger-get-patients.png)
+![Create User](05-Create-User.png)
 
-### H2 Database
+![Patient Admitted](06-Patient-Admitted.png)
 
-![H2 Database](h2-database-wards.png)
+![Patient List](07-Patient-List.png)
 
-### Project Structure
+![Patient Transfer](08-Patient-Transfer.png)
 
-![Project Structure](hospital-project-structure.png)
+![Patient Status Update](09-Patient-Status-Update.png)
 
----
+▶️ Running the Project
+Clone Repository
 
-## ▶️ Running the Project
-
-### Clone Repository
-
-```bash
 git clone https://github.com/Peter-c-dev/New-Hospital-management.git
-```
 
-### Run Application
+Run Application
 
-```bash
-mvn spring-boot:run
-```
+mvn spring-boot
 
 Application runs on:
 
-```text
 http://localhost:8080
-```
 
----
-
-## 🔐 Authentication
+🔐 Authentication
 
 Spring Security authentication is enabled.
 
@@ -135,44 +113,29 @@ JWT tokens are generated during login and can be used to access secured endpoint
 
 Passwords are encrypted using BCrypt before being stored in the database.
 
----
+📡 Example API Endpoints
+Patients
 
-## 📡 Example API Endpoints
+Get All Patients
 
-### Patients
-
-#### Get All Patients
-
-```http
 GET /api/patients
-```
 
-#### Admit Patient
+Admit Patient
 
-```http
 POST /api/patients/admit/{wardName}/{username}
-```
 
-#### Update Patient Status
+Update Patient Status
 
-```http
 PATCH /api/patients/{id}/status
-```
 
-#### Discharge Patient
+Discharge Patient
 
-```http
 DELETE /api/patients/{id}
-```
 
----
-
-## 📈 Future Improvements
-
-* JWT Authentication
-* PostgreSQL integration
-* Docker deployment
-* React frontend
-* Automated testing
-* Role-based authorization
-* CI/CD pipeline with GitHub Actions
+📈 Future Improvements
+PostgreSQL integration
+Docker deployment
+React frontend
+Automated testing
+Role-based authorization
+CI/CD pipeline with GitHub Actions
