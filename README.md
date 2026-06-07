@@ -9,19 +9,23 @@ This project demonstrates backend software engineering concepts including RESTfu
 The system supports patient admission, doctor assignment, ward management, and appointment handling.
 
 ---
+🚀 Features
 
-## 🚀 Features
-
-* Patient admission system
-* Doctor management
-* Ward assignment
-* Appointment management
-* RESTful APIs
-* Spring Security authentication
-* H2 in-memory database
-* DTO architecture
-* Exception handling
-* Layered backend structure
+Patient admission system
+Patient transfer between wards
+Patient status tracking (ADMITTED / DISCHARGED)
+Doctor management
+Doctor assignment during patient admission
+Ward assignment and management
+Appointment management
+User registration
+User login with JWT authentication
+RESTful APIs
+Spring Security authentication
+H2 in-memory database
+DTO architecture
+Exception handling
+Layered backend structure****
 
 ---
 
@@ -123,7 +127,13 @@ http://localhost:8080
 
 Spring Security authentication is enabled.
 
-Development credentials are generated at application startup and displayed in the console logs.
+The application includes custom user registration and login functionality.
+
+Users can register accounts and authenticate using username and password.
+
+JWT tokens are generated during login and can be used to access secured endpoints.
+
+Passwords are encrypted using BCrypt before being stored in the database.
 
 ---
 
@@ -164,8 +174,5 @@ DELETE /api/patients/{id}
 * Docker deployment
 * React frontend
 * Automated testing
-* Role-based authorization
-* CI/CD pipeline with GitHub Actions
-
 * Role-based authorization
 * CI/CD pipeline with GitHub Actions
