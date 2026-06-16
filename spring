@@ -56,16 +56,16 @@ https://github.com/Peter-c-dev/New-Hospital-management
 * Exception Handling
 * Configuration
 
-  ## Key Concepts Demonstrated
+  📚 Key Concepts Demonstrated
 * Dependency Injection
-* Rest API Design
+* REST API Design
 * Layered Architecture
 * DTO Pattern
 * Entity Relationships
 * Spring Security
 * JWT Authentication
 * Validation
-* Customer Exception Handling
+* Custom Exception Handling
 * Repository Pattern
 
 ## 🏗️ Architecture
@@ -76,7 +76,7 @@ Doctor -> Patients (One-to-Many)
 
 Doctor -> Appointments (One-to-Many)
 
-Patient -> Appointmnets (One-to-Many)
+Patient -> Appointments (One-to-Many)
 
 ### Controller Layer
 
@@ -103,7 +103,7 @@ Separates API request and response models from internal entities.
 Provides Spring Security configuration and JWT authentication support.
 JWT-based authentication
 BCrypt password encryption
-Protected API end points
+Protected API endpoints
 
 ## 📸 Screenshots
 
@@ -225,18 +225,18 @@ PATCH /api/patients/{id}/status
 DELETE /api/patients/{id}
 ```
 
-## Current Project Scope
+📦 Current Project Scope
 
-5 Controllers
-5 Services
-5 Repositories
-5 Entities
-Multiple DTOs
-Custom Exceptions
-JWT Authentication
-Validation
-Swagger Documentation
-Spring Security
+* 5 Controllers
+* 5 Services
+* 5 Repositories
+* 5 Entities
+* Multiple DTOs
+* Custom Exceptions
+* JWT Authentication
+* Validation
+* Swagger Documentation
+* Spring Security
 
 ## 📈 Future Improvements
 
