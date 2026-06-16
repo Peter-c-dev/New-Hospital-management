@@ -8,6 +8,9 @@ This project demonstrates backend software engineering concepts including RESTfu
 
 The system supports patient admission, doctor assignment, ward management, patient transfers, and appointment handling.
 
+GitHub Repository:
+https://github.com/Peter-c-dev/New-Hospital-management
+
 ## 🚀 Features
 
 * Patient admission system
@@ -25,6 +28,10 @@ The system supports patient admission, doctor assignment, ward management, patie
 * DTO architecture
 * Exception handling
 * Layered backend structure
+* Input validation using Jakarta Validation
+* Custom exception handling
+* Global exception handling with HTTP status codes
+* Interactive API documentation using Swagger/OpenAPI
 
 ## 🛠️ Tech Stack
 
@@ -45,10 +52,31 @@ The system supports patient admission, doctor assignment, ward management, patie
 * Repositories
 * DTOs
 * Models
-* Security Configuration
+* Security
 * Exception Handling
+* Configuration
+
+  ## Key Concepts Demonstrated
+* Dependency Injection
+* Rest API Design
+* Layered Architecture
+* DTO Pattern
+* Entity Relationships
+* Spring Security
+* JWT Authentication
+* Validation
+* Customer Exception Handling
+* Repository Pattern
 
 ## 🏗️ Architecture
+
+Ward -> Patients (One-to-Many)
+
+Doctor -> Patients (One-to-Many)
+
+Doctor -> Appointments (One-to-Many)
+
+Patient -> Appointmnets (One-to-Many)
 
 ### Controller Layer
 
@@ -73,6 +101,9 @@ Separates API request and response models from internal entities.
 ### Security Layer
 
 Provides Spring Security configuration and JWT authentication support.
+JWT-based authentication
+BCrypt password encryption
+Protected API end points
 
 ## 📸 Screenshots
 
@@ -194,14 +225,29 @@ PATCH /api/patients/{id}/status
 DELETE /api/patients/{id}
 ```
 
+## Current Project Scope
+
+5 Controllers
+5 Services
+5 Repositories
+5 Entities
+Multiple DTOs
+Custom Exceptions
+JWT Authentication
+Validation
+Swagger Documentation
+Spring Security
+
 ## 📈 Future Improvements
 
 * PostgreSQL integration
 * Docker deployment
 * React frontend
+* JUnit and Mockito testing
 * Automated testing
-* Role-based authorization
+* Role-based authorization (ADMIN/DOCTOR)
 * CI/CD pipeline with GitHub Actions
+* Cloud deployment (AWS/Azure)
 
 ## 👨‍💻 Author
 
