@@ -4,12 +4,15 @@
 
 A Hospital Management System backend built with Spring Boot that simulates NHS-style hospital workflows.
 
-This project demonstrates backend software engineering concepts including RESTful APIs, layered architecture, JWT authentication, database relationships, and Spring Security integration.
+This project demonstrates backend software engineering concepts including RESTful APIs, layered architecture, JWT authentication, database relationships, validation, exception handling, and Spring Security integration.
 
-The system supports patient admission, doctor assignment, ward management, patient transfers, and appointment handling.
+The system supports patient admission, doctor assignment, ward management, patient transfers, appointment scheduling, and user authentication.
 
-GitHub Repository:
+**GitHub Repository**
+
 https://github.com/Peter-c-dev/New-Hospital-management
+
+---
 
 ## 🚀 Features
 
@@ -26,12 +29,12 @@ https://github.com/Peter-c-dev/New-Hospital-management
 * Spring Security authentication
 * H2 in-memory database
 * DTO architecture
-* Exception handling
-* Layered backend structure
 * Input validation using Jakarta Validation
 * Custom exception handling
 * Global exception handling with HTTP status codes
 * Interactive API documentation using Swagger/OpenAPI
+
+---
 
 ## 🛠️ Tech Stack
 
@@ -45,6 +48,8 @@ https://github.com/Peter-c-dev/New-Hospital-management
 * Swagger / OpenAPI
 * Postman
 
+---
+
 ## 📂 Project Structure
 
 * Controllers
@@ -56,7 +61,9 @@ https://github.com/Peter-c-dev/New-Hospital-management
 * Exception Handling
 * Configuration
 
- ## 📚 Key Concepts Demonstrated
+---
+
+## 📚 Key Concepts Demonstrated
 
 * Dependency Injection
 * REST API Design
@@ -69,15 +76,18 @@ https://github.com/Peter-c-dev/New-Hospital-management
 * Custom Exception Handling
 * Repository Pattern
 
+---
+
+## 📊 Entity Relationships
+
+* Ward → Patients (One-to-Many)
+* Doctor → Patients (One-to-Many)
+* Doctor → Appointments (One-to-Many)
+* Patient → Appointments (One-to-Many)
+
+---
+
 ## 🏗️ Architecture
-
-Ward -> Patients (One-to-Many)
-
-Doctor -> Patients (One-to-Many)
-
-Doctor -> Appointments (One-to-Many)
-
-Patient -> Appointments (One-to-Many)
 
 ### Controller Layer
 
@@ -102,9 +112,12 @@ Separates API request and response models from internal entities.
 ### Security Layer
 
 Provides Spring Security configuration and JWT authentication support.
-JWT-based authentication
-BCrypt password encryption
-Protected API endpoints
+
+* JWT-based authentication
+* BCrypt password encryption
+* Protected API endpoints
+
+---
 
 ## 📸 Screenshots
 
@@ -144,6 +157,8 @@ Protected API endpoints
 
 ![Patient Status Update](09-Patient-Status-Update.png)
 
+---
+
 ## ▶️ Running the Project
 
 ### Clone Repository
@@ -176,6 +191,8 @@ Swagger UI:
 http://localhost:8080/swagger-ui.html
 ```
 
+---
+
 ## 🔐 Authentication
 
 Spring Security authentication is enabled.
@@ -187,6 +204,8 @@ Users can register accounts and authenticate using username and password.
 JWT tokens are generated during login and can be used to access secured endpoints.
 
 Passwords are encrypted using BCrypt before being stored in the database.
+
+---
 
 ## 📡 Example API Endpoints
 
@@ -226,7 +245,9 @@ PATCH /api/patients/{id}/status
 DELETE /api/patients/{id}
 ```
 
-📦 Current Project Scope
+---
+
+## 📦 Current Project Scope
 
 * 5 Controllers
 * 5 Services
@@ -239,19 +260,22 @@ DELETE /api/patients/{id}
 * Swagger Documentation
 * Spring Security
 
+---
+
 ## 📈 Future Improvements
 
 * PostgreSQL integration
 * Docker deployment
 * React frontend
 * JUnit and Mockito testing
-* Automated testing
-* Role-based authorization (ADMIN/DOCTOR)
+* Role-based authorization (ADMIN / DOCTOR)
 * CI/CD pipeline with GitHub Actions
-* Cloud deployment (AWS/Azure)
+* Cloud deployment (AWS / Azure)
+
+---
 
 ## 👨‍💻 Author
 
-Peter Cross
+**Peter Cross**
 
 Built as part of my software engineering portfolio while transitioning into backend Java development using Spring Boot and modern API design principles.
