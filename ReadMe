@@ -121,41 +121,32 @@ Provides Spring Security configuration and JWT authentication support.
 
 ## 📸 Screenshots
 
-### User Registration
+Patient Admitted
 
-![User Registration](01-User-Registration.png)
 
-### Get All Users
 
-![Get All Users](02-Get-All-Users.png)
 
-### User Login JWT
+Get All Patients
 
-![User Login JWT](03-User-Login-JWT.png)
 
-### Create Ward
 
-![Create Ward](04-Create-Ward.png)
 
-### Create User
+Search Patient
 
-![Create User](05-Create-User.png)
 
-### Patient Admitted
 
-![Patient Admitted](06-Patient-Admitted.png)
 
-### Patient List
+Get All Doctors
 
-![Patient List](07-Patient-List.png)
 
-### Patient Transfer
 
-![Patient Transfer](08-Patient-Transfer.png)
 
-### Patient Status Update
+Get Doctor By Id
 
-![Patient Status Update](09-Patient-Status-Update.png)
+
+
+
+Get Ward By Id
 
 ---
 
